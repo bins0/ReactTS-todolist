@@ -113,12 +113,13 @@
     }
 
     .todos{
-        width: 95%;
+        width: 90%;
         margin-bottom: 10px;
     }
 
     .container{
         width: 95%;
+        align-items: center;
         flex-direction: column;
     }
 }
