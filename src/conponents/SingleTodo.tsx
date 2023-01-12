@@ -6,7 +6,6 @@ import "./styles.css";
 import { useState } from "react";
 import { Draggable } from "react-beautiful-dnd";
 
-
 type Props = {
   index: number;
   todo: Todo;
@@ -55,7 +54,7 @@ const SingleTodo: React.FC<Props> = ({
     <Draggable draggableId={todo.id.toString()} index={index}>
       {(provided, snapshot) => (
         <form
-          className={`todos__single ${snapshot.isDragging? "drag" : ""}`}
+          className={`todos__single ${snapshot.isDragging ? "drag" : ""}`}
           onSubmit={(e) => handleEdit(e, todo.id)}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
